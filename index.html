@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaKos Local Tracker</title>
+    <title>MangaKos</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192x192.png" type="image/png">
     
     <link rel="stylesheet" href="style.css">
     
@@ -16,7 +18,7 @@
     <div class="container">
         
         <header>
-            <h1>MangaKos</h1>
+            <h1><img src="icons/icon-512x512.png" alt="MangaKos Logo"></h1>
             <p>Meu santuário para acompanhar leituras.</p>
         </header>
 
@@ -117,6 +119,17 @@
     <!-- JS da extensão Responsive do DataTables -->
     <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.min.js"></script>
     
+    <script>
+        // Registra o Service Worker para funcionalidade offline
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('Service Worker registrado com sucesso:', registration))
+                    .catch(error => console.log('Falha ao registrar Service Worker:', error));
+            });
+        }
+    </script>
+
     <script src="app.js"></script>
 
 </body>

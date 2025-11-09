@@ -1,0 +1,21 @@
+{
+  "name": "MangaKos",
+  "short_name": "MangaKos",
+  "description": "Meu santuário para acompanhar leituras.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e1e24",
+  "theme_color": "#2c2c34",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

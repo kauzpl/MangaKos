@@ -45,19 +45,14 @@ header {
 
 h1 {
     font-size: 3em;
-    font-weight: 700;
-    color: var(--color-primary);
     margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
 
-h1::before {
-    content: '🔥'; 
-    font-size: 1.2em;
-    color: var(--color-accent);
+h1 img {
+    max-width: 350px; /* Define a largura máxima do logo */
+    height: auto; /* Mantém a proporção */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block;
 }
 
 p {
