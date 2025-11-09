@@ -7,6 +7,7 @@ const urlsToCache = [
   '/manifest.json',
   '/icons/icon-192x192.png',
   '/icons/icon-512x512.png',
+  '/icons/icon-maskable-512x512.png',
   'https://code.jquery.com/jquery-3.7.1.min.js',
   'https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css',
   'https://cdn.datatables.net/responsive/3.0.2/css/responsive.dataTables.min.css',
